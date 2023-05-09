@@ -1,0 +1,64 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  background-color: #ffe4c4;
+}
+
+/* Form related css */
+
+form {
+  width: 30%;
+  border: 1px solid rgb(230, 230, 230);
+  margin: 45px auto;
+  padding: 3%;
+  background: white;
+  border-radius: 10px;
+}
+
+input,
+select {
+  width: 100%;
+  display: block;
+  margin: 15px 0px;
+  font-size: 18px;
+  padding: 2%;
+  border-radius: 10px;
+  border: 1px solid black;
+}
+option {
+  width: 95%;
+  font-size: 20px;
+}
+
+#submit {
+  width: 70%;
+  margin: auto;
+  background-color: black;
+  color: white;
+  border: none;
+  border: 1px solid black;
+  border-radius: 15px;
+}
+/* Form related css */
+
+/* Media- quries*/
+@media all and (min-width: 769px) and (max-width: 1024px) {
+  form {
+    width: 45%;
+  }
+}
+
+@media all and (min-width: 480px) and (max-width: 768px) {
+  form {
+    width: 60%;
+  }
+}
+
+@media all and (min-width: 280px) and (max-width: 479px) {
+  form {
+    width: 80%;
+  }
+}

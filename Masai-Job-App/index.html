@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Job-Lister</title>
+    <link
+      rel="shortcut icon"
+      href="Images/jobAppLogo1.jpg"
+      type="image/x-icon"
+    />
+    <link rel="stylesheet" href="./Styles/navbar.css" />
+    <link rel="stylesheet" href="./Styles/index.css" />
+  </head>
+  <body>
+    <header>
+      <nav class="navbar">
+        <a href="#" class="nav-logo"
+          ><img src="Images/jobAppLogo.jpg" alt="Logo"
+        /></a>
+
+        <ul class="nav-menu">
+          <li class="nav-item"><a href="index.html">Home</a></li>
+          <li class="nav-item"><a href="applied.html">Applied Jobs</a></li>
+          <li class="nav-item"><a href="bookmark.html">Bookmarks</a></li>
+        </ul>
+
+        <div class="hamburger">
+          <span class="bar"></span>
+          <span class="bar"></span>
+          <span class="bar"></span>
+        </div>
+      </nav>
+    </header>
+
+    <form action="" id="form">
+      <h2>Enter Your Application Details</h2>
+      <input
+        placeholder="Enter Company Name"
+        id="name"
+        name="name"
+        type="text"
+        required
+      />
+      <input
+        placeholder="Enter Recrutier email"
+        type="email"
+        name="email"
+        id="email"
+        required
+      />
+      <select name="role" id="role" required>
+        <option value="">Select your role</option>
+        <option value="FSD">FSD</option>
+        <option value="Backend">Backend</option>
+        <option value="Frontend">Frontend</option>
+      </select>
+      <input
+        id="salary"
+        type="number"
+        placeholder="Enter expected salary in lakhs per annum"
+        required
+      />
+      <input id="submit" type="submit" name="submit" value="Submit" />
+    </form>
+  </body>
+</html>
+<script src="./Scripts/navbar.js"></script>
+<script src="./Scripts/index.js"></script>

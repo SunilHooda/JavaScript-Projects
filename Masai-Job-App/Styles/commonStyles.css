@@ -1,0 +1,112 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  background-color: #ffe4c4;
+}
+
+.filterAndSort {
+  width: 40%;
+  display: flex;
+  flex-direction: row;
+  margin: auto;
+  margin-top: 50px;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+}
+.filterAndSort > select {
+  width: 100%;
+  margin: auto;
+  height: 35px;
+  padding: 4px;
+  border-radius: 5px;
+  border: 1px solid grey;
+  font-size: 14px;
+}
+
+.table {
+  display: block;
+  width: 100%;
+  padding: 0 10px;
+  padding-bottom: 50px;
+}
+
+table {
+  border-collapse: collapse;
+  width: 90%;
+  margin: auto;
+  margin-top: 50px;
+  border: 1px solid black;
+  text-align: center;
+}
+
+th {
+  border: 1px solid black;
+  text-align: center;
+  padding: 15px;
+  background-color: teal;
+  color: white;
+  gap: 5px;
+}
+
+tr {
+  text-align: center;
+  padding: 15px;
+  background-color: white;
+  color: black;
+}
+
+td {
+  border: 1px solid black;
+  text-align: center;
+  padding: 15px;
+}
+
+::-webkit-scrollbar {
+  width: 5px;
+  height: 5px;
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: rgb(114, 113, 113);
+  border-radius: 10px;
+}
+
+::-webkit-scrollbar-track {
+  background-color: transparent;
+}
+
+@media all and (max-width: 568px) {
+  .table {
+    overflow-x: scroll;
+  }
+}
+
+/* Media Quries for Sorting and Filtering */
+@media all and (min-width: 769px) and (max-width: 1024px) {
+  .filterAndSort {
+    width: 50%;
+  }
+}
+
+@media all and (min-width: 578px) and (max-width: 768px) {
+  .filterAndSort {
+    width: 70%;
+  }
+}
+
+@media all and (min-width: 425px) and (max-width: 577px) {
+  .filterAndSort {
+    width: 90%;
+  }
+}
+
+@media all and (max-width: 424px) {
+  .filterAndSort {
+    width: 70%;
+    flex-wrap: wrap;
+  }
+}
