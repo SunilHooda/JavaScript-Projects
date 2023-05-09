@@ -3,7 +3,7 @@
 A simple application where you can store all your job applications.
 <br />
 
-##[Deployed URL](https://mini-joblister.netlify.app/)
+## [Deployed URL](https://mini-joblister.netlify.app/)
 
 ## Features
 
