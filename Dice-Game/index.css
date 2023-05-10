@@ -1,0 +1,207 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #adcdea;
+}
+
+#winnerBox {
+  width: 30%;
+  height: 60px;
+  margin: auto;
+  margin-top: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 26px;
+  font-weight: bold;
+  background-color: rgba(173, 216, 230, 0.356);
+  color: darkslategrey;
+  border-radius: 25px;
+  box-shadow: rgba(67, 71, 85, 0.27) 0px 0px 0.25em,
+    rgba(90, 125, 188, 0.05) 0px 0.25em 1em;
+}
+
+.winEmoji {
+  margin: 0 30px;
+  width: 40px;
+}
+
+#members {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  margin: auto;
+  margin-top: 50px;
+  justify-content: space-between;
+  align-items: center;
+  padding: 50px;
+}
+
+#members > div {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  margin: auto;
+  justify-content: center;
+  align-items: center;
+  color: darkslategrey;
+  font-size: 25px;
+  font-weight: bold;
+}
+
+#members > div > span > img {
+  width: 70px;
+}
+
+span {
+  color: white;
+  padding: 15px 30px;
+  margin: 0 40px;
+  border-radius: 5px;
+  box-shadow: rgba(0, 0, 0, 0.17) 0px -23px 25px 0px inset,
+    rgba(0, 0, 0, 0.15) 0px -36px 30px 0px inset,
+    rgba(0, 0, 0, 0.1) 0px -79px 40px 0px inset, rgba(0, 0, 0, 0.06) 0px 2px 1px,
+    rgba(0, 0, 0, 0.09) 0px 4px 2px, rgba(0, 0, 0, 0.09) 0px 8px 4px,
+    rgba(0, 0, 0, 0.09) 0px 16px 8px, rgba(0, 0, 0, 0.09) 0px 32px 16px;
+}
+
+#buttonBox {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  margin: auto;
+  margin-top: 20px;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px;
+}
+
+#roll {
+  margin-top: 30px;
+  color: white;
+  background-color: tomato;
+  font-size: 25px;
+  padding: 15px 30px;
+  border-radius: 10px;
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 30px 60px -12px inset,
+    rgba(0, 0, 0, 0.3) 0px 18px 36px -18px inset;
+  border: none;
+  cursor: pointer;
+  display: block;
+}
+
+#roll:hover {
+  background-color: green;
+}
+
+@media all and (min-width: 769px) and (max-width: 1024px) {
+  #winnerBox {
+    width: 45%;
+    margin-top: 15px;
+  }
+
+  #members {
+    flex-wrap: wrap;
+    gap: 30px;
+    margin-top: 15px;
+  }
+
+  #members > div > span > img {
+    width: 60px;
+  }
+
+  #buttonBox {
+    margin-top: 5px;
+  }
+
+  #roll {
+    margin-top: 10px;
+  }
+}
+
+@media all and (min-width: 425px) and (max-width: 768px) {
+  #winnerBox {
+    width: 75%;
+    margin-top: 30px;
+  }
+
+  .winEmoji {
+    margin: 0 20px;
+    width: 40px;
+  }
+
+  #members {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+    margin-top: 30px;
+  }
+
+  #members > div {
+    gap: 20px;
+    font-size: 22px;
+    font-weight: 600;
+  }
+
+  #members > div > span > img {
+    width: 50px;
+  }
+
+  span {
+    padding: 10px 25px;
+    margin: 0 20px;
+  }
+
+  #roll {
+    font-size: 20px;
+    padding: 10px 25px;
+  }
+}
+
+@media all and (max-width: 424px) {
+  #winnerBox {
+    width: 95%;
+    margin-top: 30px;
+  }
+
+  .winEmoji {
+    margin: 0 20px;
+    width: 40px;
+  }
+
+  #members {
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    gap: 30px;
+    padding: 30px;
+    margin-top: 30px;
+  }
+
+  #members > div {
+    justify-content: space-between;
+    align-items: center;
+    gap: 20px;
+    font-size: 20px;
+    font-weight: 600;
+  }
+
+  #members > div > span > img {
+    width: 50px;
+  }
+
+  span {
+    padding: 10px 25px;
+    margin: 0 20px;
+  }
+
+  #roll {
+    font-size: 20px;
+    padding: 10px 25px;
+  }
+}
