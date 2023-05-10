@@ -23,8 +23,8 @@ To run my application you simply need to clone the project and run the html file
 
 ## Home Page
 
-![HomePage]()
+![HomePage](https://github.com/SunilHooda/JavaScript-Projects/blob/main/Keyboard-Events/Images/Home.png)
 
 ## Key-Event Details
 
-![Key-Event]()
+![Key-Event](https://github.com/SunilHooda/JavaScript-Projects/blob/main/Keyboard-Events/Images/KeyDetail.png)
