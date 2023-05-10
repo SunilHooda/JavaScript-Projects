@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Keyboard-Events</title>
+    <link rel="stylesheet" href="./index.css" />
+  </head>
+  <body>
+    <h1 id="heading">Keyboard Event Codes</h1>
+
+    <div class="keyPress">
+      <h3>Press any key to get Key Code</h3>
+    </div>
+
+    <div id="parentContainer">
+      <div class="keyBox">
+        <h3>event.key</h3>
+        <span class="key" id="key"></span>
+      </div>
+
+      <div class="keyBox">
+        <h3>event.keyCode</h3>
+        <span class="key" id="keyCode"></span>
+      </div>
+
+      <div class="keyBox">
+        <h3>event.code</h3>
+        <span class="key" id="code"></span>
+      </div>
+    </div>
+
+    <button id="btn">Reset</button>
+  </body>
+</html>
+<script src="./index.js"></script>

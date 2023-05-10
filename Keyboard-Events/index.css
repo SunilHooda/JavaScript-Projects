@@ -1,0 +1,87 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: bisque;
+}
+
+#heading {
+  width: 100%;
+  height: auto;
+  text-align: center;
+  margin: auto;
+  margin-top: 50px;
+  color: teal;
+  font-size: 34px;
+}
+
+.keyPress {
+  width: 290px;
+  margin: auto;
+  border: 2px solid gray;
+  padding: 10px;
+  background-color: white;
+  color: #6495ed;
+  border-radius: 5px;
+  text-align: center;
+  margin-top: 50px;
+  cursor: pointer;
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px,
+    rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
+}
+
+#parentContainer {
+  width: 100%;
+  display: none;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+  margin: auto;
+  margin-top: 50px;
+  gap: 50px;
+}
+
+.keyBox {
+  width: 200px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.key {
+  width: 150px;
+  border: 2px solid gray;
+  padding: 10px;
+  background-color: white;
+  color: #6495ed;
+  border-radius: 5px;
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px,
+    rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
+  font-size: 24px;
+  text-align: center;
+}
+#btn {
+  display: none;
+  margin: auto;
+  margin-top: 30px;
+  padding: 8px 16px;
+  border-radius: 5px;
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px,
+    rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
+  font-size: 16px;
+  background-color: tomato;
+  color: white;
+  border: none;
+  cursor: pointer;
+}
+
+@media all and (max-width: 767px) {
+  #parentContainer {
+    flex-direction: column;
+  }
+}
