@@ -1,0 +1,128 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --primary: #fff;
+  --secondary: #000;
+  --border-color: white;
+  transition: all 0.5s ease-in-out;
+}
+
+html.dark {
+  --primary: #000;
+  --secondary: #fff;
+  background-color: rgb(34, 34, 34);
+  --border-color: rgba(107, 103, 103, 0.1);
+  transition: all 0.5s ease-in-out;
+}
+
+body {
+  font-family: "Times New Roman", Times, serif;
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.clock-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.clock {
+  width: 210px;
+  height: 210px;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+  border: 7px solid var(--border-color);
+  margin-bottom: 50px;
+  box-shadow: 0 0 25px 1px rgba(0, 0, 0, 0.15),
+    2px 2px 20px 3px rgba(0, 0, 0, 0.1) inset;
+}
+
+/* Using absolute position with inset of 10 px relative to clock div and rotating the numbers using Interpolytant CSS Numeric Variable. */
+.clock span {
+  position: absolute;
+  inset: 8px;
+  display: block;
+  text-align: center;
+  transform: rotate(calc(30deg * var(--num)));
+}
+
+.clock span p {
+  font-size: 18px;
+  transform: rotate(calc(-30deg * var(--num)));
+  color: var(--secondary);
+}
+
+.center-point {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 10px;
+  height: 10px;
+  background-color: #dc143c;
+  border-radius: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.hand {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform-origin: bottom center;
+}
+
+.hand.hour {
+  width: 5px;
+  height: 50px;
+  background-color: var(--secondary);
+  border-top: 2px solid skyblue;
+}
+
+.hand.minute {
+  width: 3px;
+  height: 60px;
+  background-color: var(--secondary);
+  border-top: 2px solid darkred;
+}
+
+.hand.second {
+  width: 2px;
+  height: 70px;
+  background-color: #dc143c;
+}
+
+.time {
+  font-size: 60px;
+  color: var(--secondary);
+}
+
+.date {
+  font-size: 30px;
+  color: var(--secondary);
+}
+
+.toggle {
+  position: absolute;
+  left: 50%;
+  bottom: 100px;
+  transform: translate(-50%);
+  padding: 5px 10px;
+  background-color: transparent;
+  border: 5px solid var(--border-color);
+  color: var(--secondary);
+  border-radius: 5px;
+  font-size: 18px;
+  box-shadow: 0 0 25px 1px rgba(0, 0, 0, 0.15),
+    2px 2px 20px 3px rgba(0, 0, 0, 0.1) inset;
+}
