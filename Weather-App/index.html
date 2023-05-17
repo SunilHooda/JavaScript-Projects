@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="icon"
+      type="image/x-icon"
+      href="https://cdn-icons-png.flaticon.com/512/7614/7614375.png"
+    />
+    <title>Weather App</title>
+    <link rel="stylesheet" href="./index.css" />
+  </head>
+  <body>
+    <div class="search">
+      <input type="text" id="query" placeholder="Search city..." />
+      <button onclick="getDataBySearch()">Search</button>
+
+      <button id="liveLocation" onclick="getLocation()">
+        Get Live Location
+      </button>
+    </div>
+
+    <div class="container">
+      <div class="weatherInfo"></div>
+      <div class="map">
+        <iframe
+          style="border: 0"
+          allowfullscreen=""
+          id="gmap_canvas"
+          referrerpolicy="no-referrer-when-downgrade"
+        ></iframe>
+      </div>
+    </div>
+
+    <div class="weeklyForecast"></div>
+  </body>
+</html>
+<script src="./index.js"></script>
