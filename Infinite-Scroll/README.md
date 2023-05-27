@@ -29,8 +29,8 @@ To run my application you simply need to clone the project and run the html file
 
 ## Home Page
 
-![HomePage]()
+![HomePage](https://github.com/SunilHooda/JavaScript-Projects/blob/main/Infinite-Scroll/images/HomePage.png)
 
 ## Modal Pop-up
 
-![ModalPop-up]()
+![ModalPop-up](https://github.com/SunilHooda/JavaScript-Projects/blob/main/Infinite-Scroll/images/Modal.png)
